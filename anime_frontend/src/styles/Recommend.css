@@ -1,0 +1,24 @@
+.recommend-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.recommend-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ff4c4c;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.loading {
+  color: #888;
+}
+
+.empty {
+  color: #777;
+}

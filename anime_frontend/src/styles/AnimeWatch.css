@@ -1,0 +1,123 @@
+.watch-container {
+  padding: 30px 60px;
+  background: #0e0e0e;
+  color: #fff;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.watch-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffae42;
+  font-size: 1.6rem;
+}
+
+/* VIDEO PLAYER */
+.video-wrapper {
+  width: 100%;
+  height: 480px;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 174, 66, 0.2);
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* SERVER CHOOSER */
+.server-section {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.server-section span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.server-section button {
+  background: #222;
+  color: #ccc;
+  border: 1px solid #555;
+  padding: 6px 12px;
+  margin: 0 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.server-section button:hover {
+  background: #333;
+}
+
+.server-section .active {
+  background: linear-gradient(90deg, #ff6b00, #ffae42);
+  color: #fff;
+  border: none;
+}
+
+/* NOTICE */
+.watch-notice {
+  margin: 20px 0;
+  background: #191919;
+  border-left: 5px solid #ff6b00;
+  padding: 15px 20px;
+  border-radius: 6px;
+  line-height: 1.6;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.watch-notice b {
+  color: #ffae42;
+}
+
+/* EPISODE LIST */
+.episode-list {
+  margin-top: 30px;
+}
+
+.episode-list h3 {
+  color: #ffae42;
+  margin-bottom: 12px;
+}
+
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 8px;
+}
+
+.episode-btn {
+  background: #222;
+  border: 1px solid #444;
+  color: #ccc;
+  padding: 8px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.episode-btn:hover {
+  background: #ffae42;
+  color: #000;
+}
+
+.episode-btn.active {
+  background: #ff6b00;
+  color: white;
+  font-weight: bold;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+  font-size: 1.2rem;
+}

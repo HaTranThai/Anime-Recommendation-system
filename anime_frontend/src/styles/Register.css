@@ -1,0 +1,105 @@
+.register-container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #1b1b1b, #000);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.register-card {
+  background: rgba(101, 66, 66, 0.529);
+  padding: 40px 60px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.05);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.register-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #ffa733;
+  text-shadow: 0 0 8px rgba(255, 167, 51, 0.7);
+}
+
+.register-icon {
+  font-size: 2rem;
+  line-height: 1;
+  filter: drop-shadow(0 0 6px rgba(255, 167, 51, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* INPUT */
+.register-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #eaf0ff;
+  color: #000;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.register-form input:focus {
+  outline: none;
+  background: #f8faff;
+  box-shadow: 0 0 8px rgba(255, 174, 66, 0.4);
+}
+
+/* BUTTON */
+.register-form button {
+  width: 100%;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff7a00, #ffa733);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.register-form button:hover {
+  background: linear-gradient(90deg, #ff8a00, #ffc04a);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(255, 153, 51, 0.4);
+}
+
+/* ĐOẠN “Đã có tài khoản” */
+.login-text {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.login-text a {
+  color: #ffa733;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .register-card {
+    padding: 30px 25px;
+  }
+}

@@ -1,0 +1,64 @@
+.anime-poster {
+  position: relative;
+  cursor: pointer;
+  width: 200px; /* bạn có thể chỉnh tùy grid */
+  transition: transform 0.3s ease;
+}
+
+.anime-poster:hover {
+  transform: scale(1.05);
+}
+
+/* ẢNH POSTER */
+.poster-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.anime-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: filter 0.3s ease;
+}
+
+.anime-poster:hover .anime-image {
+  filter: brightness(70%);
+}
+
+/* ICON PLAY Ở GIỮA */
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.anime-poster:hover .play-icon {
+  opacity: 1;
+}
+
+/* DẢI BĂNG ĐỎ “XEM PHIM” */
+.banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 0, 0, 0.85);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

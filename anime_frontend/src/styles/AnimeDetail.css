@@ -1,0 +1,122 @@
+.anime-detail {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 60px 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+.anime-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* POSTER */
+.anime-poster {
+  position: relative;
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.anime-poster img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.watch-btn {
+  display: block;
+  background: linear-gradient(90deg, #ff2525, #ff6b6b);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.watch-btn:hover {
+  background: linear-gradient(90deg, #ff4040, #ff8585);
+  transform: scale(1.05);
+}
+
+/* THÔNG TIN */
+.anime-info {
+  flex: 1;
+  backdrop-filter: blur(2px);
+}
+
+.anime-title-detail {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #aaff5c;
+  margin-bottom: 4px;
+}
+
+.anime-subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.anime-description {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* THÔNG TIN NHỎ */
+.anime-meta p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.anime-meta strong {
+  color: #ffae42;
+}
+
+.tag {
+  background: #ff5c5c;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.genre-tag {
+  display: inline-block;
+  margin: 0 4px 4px 0;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background: #222;
+  border: 1px solid #444;
+  color: #7cffb2;
+  font-size: 0.85rem;
+}
+
+.rating {
+  background: gold;
+  color: #000;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* LOADING */
+.loading {
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.2rem;
+}
